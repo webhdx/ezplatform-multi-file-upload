@@ -14,7 +14,7 @@ services:
             - '%ez_systems.multifile_upload.fallback_content_type%'
             - '%ez_systems.multifile_upload.max_file_size%'
         tags:
-            - { name: ezsystems.platformui.application_config_provider, key: 'multiFileUpload' }
+            - { name: ezplatform.admin_ui.config_provider, key: 'multiFileUpload' }
 
     ez_systems.multifile_upload.service.permission_report:
         class: '%ez_systems.multifile_upload.service.permission_report.class%'

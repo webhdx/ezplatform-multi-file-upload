@@ -5,10 +5,12 @@
  */
 namespace EzSystems\MultiFileUploadBundle\ApplicationConfig\Providers;
 
+use EzPlatform\UI\Config\ProviderInterface;
+
 /**
  * Class responsible for generating PlatformUI configuration for Multi File Upload functionality.
  */
-class ContentTypeMappings
+class ContentTypeMappings implements ProviderInterface
 {
     /** @var array */
     protected $locationMappings = [];
